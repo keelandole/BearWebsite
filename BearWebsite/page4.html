@@ -19,14 +19,42 @@
     margin: 0 auto;
     max-width: 60%;
    max-height: 60% ; 
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     padding: 10px;
     overflow-y: auto;
 
     column-count: 2;
     column-gap: 20px;
-    column-rule: 1px solid #999;
+    column-rule: 1px solid #292929;
+    text-shadow: 1 #000;
+    background-image: url(images/mountains.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+  article
+  {
+    text-align: center;
+    border: 2px solid darkslateblue;
+    max-width: 20% ;
+    margin: 0 auto;
+    background-color: royalblue;
+
+  }
+    .required 
+        {
+            color: red;
+        }
+    label 
+        {
+            display: block;
+            margin-top: 10px;
+            justify-content: center;
+        }
+         .form-container {
+            width: 300px;
+            margin: 0 auto; /* centers horizontally */
+        }
+ 
 </style>
 </head>
 
@@ -53,10 +81,10 @@
 
 <main>
 
-<article>
-    <h1 style="text-align: center;"><b>Bear Charity Info</b></h1>
+<aside>
+    <h1 style="text-align: center;text-decoration: underline;"><b>Bear Charity Info</b></h1>
     <div class="textbox">
-        <b>Bear Trust Charity =</b> Bear Trust International is a conservation charity dedicated to protecting all eight species of bears worldwide, along with the ecosystems they depend on. Their work is grounded in science, education, and collaboration with governments, researchers, and local communities.
+       <p class="outlinedtext"><b>Bear Trust Charity =</b> Bear Trust International is a conservation charity dedicated to protecting all eight species of bears worldwide, along with the ecosystems they depend on. Their work is grounded in science, education, and collaboration with governments, researchers, and local communities.
 
 Mission and Goals:
 The organizations central mission is to conserve bear populations and their habitats while promoting coexistence between humans and wildlife. They view bears as key indicators of ecosystem health, meaning that protecting bears also helps preserve entire natural systems.
@@ -72,36 +100,71 @@ The charity works with policymakers and government agencies to promote science-b
 Habitat protection:
 A major focus is preserving natural habitats so bears can thrive in the wild despite increasing human development.
 
-Why it matters:
+
 Bear Trust International emphasizes that protecting bears is not just about one species is about maintaining biodiversity and healthy ecosystems for future generations. Their approach combines education, science, and policy, making them a comprehensive force in wildlife conservation.<br>
-<br>
+
 <b>Polar Bears International =</b> Polar Bears International (PBI) is a nonprofit organization focused exclusively on the conservation of polar bears and their Arctic sea ice habitat. It is one of the leading global voices addressing the impact of climate change on wildlife.
 
-Mission and Focus:
+
 PBIs mission is to protect polar bears by safeguarding the sea ice ecosystems they depend on. Because polar bears rely on sea ice to hunt and survive, the organization places strong emphasis on climate science and environmental advocacy.
 
-Key Activities:
 
-Climate change awareness:
+
+
 The charity educates the public about how global warming affects Arctic ecosystems and polar bear survival.
 Scientific research and tracking:
 They support research projects and even run tools like polar bear tracking programs to monitor movements and behavior in the wild.
-Public engagement:
+
 Through media campaigns, documentaries, and educational outreach, they aim to inspire global action for conservation.
-Field experiences:
+
 PBI organizes guided expeditions to Arctic regions, allowing people to witness polar bears in their natural habitat and better understand conservation challenges.
 
-Why it matters:
+
 Polar bears are considered a symbol of climate change, and their declining habitat reflects broader environmental issues. By focusing on this single species, Polar Bears International highlights the urgent need to address global warming and protect fragile ecosystems.
-    </div>
-</article>
+    </p>
+</div>
+</aside>
 <br>
 <br>
+<article class="a">Bear Trust International<br>to learn more click <a style="color: rgb(0, 0, 0);" href="https://www.beartrust.org/">here</a></article><br>
+<article class="b">Polar Bears International<br>to learn more click <a style="color: rgb(0, 0, 0);" href="https://polarbearsinternational.org/">here</a></article><br><br>
+
+<h2 style="text-align: center;">Contact Form</h2><br>
+<p style="text-align: center;">for further information through email</p>
+
+<div class="form-container">
+<form action="" method="GET">
+    
+    <label>
+        Name <span class="required">*</span>
+        <input type="text" name="name" required>
+    </label>
+
+    <label>
+        Email <span class="required">*</span>
+        <input type="email" name="email" required>
+    </label>
+
+    <label>
+        Date of Birth <span class="required">*</span>
+        <input type="date" name="dob" required>
+    </label>
+
+    <label>
+        Message
+        <textarea name="message"></textarea>
+    </label>
+<br>
+    <button style="justify-content: center;" type="submit">Submit</button>
+
+</form>
+</div>
 
 
 
 
 </main>
+<br><br>
 <footer>
 <nav class="footer-nav">
 <a href="index.html">Index</a>
