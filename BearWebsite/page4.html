@@ -50,9 +50,12 @@
             margin-top: 10px;
             justify-content: center;
         }
-         .form-container {
+         #form-container {
             width: 300px;
-            margin: 0 auto; /* centers horizontally */
+            margin: 0 auto;
+            border: 2px solid #000000;
+            padding: 10px;
+            background-color: lightslategray;
         }
  
 </style>
@@ -84,7 +87,7 @@
 <aside>
     <h1 style="text-align: center;text-decoration: underline;"><b>Bear Charity Info</b></h1>
     <div class="textbox">
-       <p class="outlinedtext"><b>Bear Trust Charity =</b> Bear Trust International is a conservation charity dedicated to protecting all eight species of bears worldwide, along with the ecosystems they depend on. Their work is grounded in science, education, and collaboration with governments, researchers, and local communities.
+       <p><strong>Bear Trust Charity =</strong> Bear Trust International is a conservation charity dedicated to protecting all eight species of bears worldwide, along with the ecosystems they depend on. Their work is grounded in science, education, and collaboration with governments, researchers, and local communities.
 
 Mission and Goals:
 The organizations central mission is to conserve bear populations and their habitats while promoting coexistence between humans and wildlife. They view bears as key indicators of ecosystem health, meaning that protecting bears also helps preserve entire natural systems.
@@ -129,12 +132,12 @@ Polar bears are considered a symbol of climate change, and their declining habit
 <article class="a">Bear Trust International<br>to learn more click <a style="color: rgb(0, 0, 0);" href="https://www.beartrust.org/">here</a></article><br>
 <article class="b">Polar Bears International<br>to learn more click <a style="color: rgb(0, 0, 0);" href="https://polarbearsinternational.org/">here</a></article><br><br>
 
-<h2 style="text-align: center;">Contact Form</h2><br>
-<p style="text-align: center;">for further information through email</p>
 
-<div class="form-container">
+
+<div id="form-container">
 <form action="" method="GET">
-    
+    <h2 style="text-align: center;">Contact Form</h2><br>
+<p style="text-align: center;">for further information through email</p>
     <label>
         Name <span class="required">*</span>
         <input type="text" name="name" required>
@@ -151,9 +154,22 @@ Polar bears are considered a symbol of climate change, and their declining habit
     </label>
 
     <label>
-        Message
+        Message to site owner
         <textarea name="message"></textarea>
     </label>
+
+  <p>Did you enjoy this website?</p>
+  <input type="checkbox" id="enjoy" name="enjoyment" value="enjoy">
+
+    <label for="bears">do you like bears?</label><br>
+  <input type="checkbox" id="bears" name="bears" value="bears">
+  
+    <label for="visit">Would you visit again?</label><br>
+  <input type="checkbox" id="visit" name="visit" value="visit"><br>
+  
+
+  
+  
 <br>
     <button style="justify-content: center;" type="submit">Submit</button>
 
